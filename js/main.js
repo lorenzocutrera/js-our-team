@@ -61,5 +61,5 @@ const dati_team = [
 */
 
 for (let i = 0; i < dati_team.length; i++) {
-    console.log(dati_team[0]);    
+    console.log(dati_team[i]);    
 }
