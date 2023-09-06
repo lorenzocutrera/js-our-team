@@ -17,37 +17,49 @@ Buon divertimento e confermate lettura come al solito!
 */
 
 //Creare l’array di oggetti con le informazioni fornite.
-const dati = [
+const dati_team = [
     {
         'name' : 'Wayne Barnett',
-        'job' : 'Founder & CEO'
+        'job' : 'Founder & CEO',
+        'img' : 'wayne-barnett-founder-ceo.jpg',
     },
 
     {
         'name' : 'Angela Caroll',	
-        'job' : 'Chief Editor'
+        'job' : 'Chief Editor',
+        'img' : 'angela-caroll-chief-editor.jpg',
     },
 
     {
         'name' : 'Walter Gordon',
-        'job' : 'Office Manager'
+        'job' : 'Office Manager',
+        'img' : 'walter-gordon-office-manager.jpg',
     },
 
     {
         'name' : 'Angela Lopez',
-        'job' : 'Social Media Manager'
+        'job' : 'Social Media Manager',
+        'img' : 'angela-lopez-social-media-manager.jpg',
     },
 
     {
         'name' : 'Scott Estrada',
-        'job' : 'Developer'
+        'job' : 'Developer',
+        'img' : 'scott-estrada-developer.jpg',
     },
 
     {
         'name' : 'Barbara Ramos',
-        'job' : 'Graphic Designer'
+        'job' : 'Graphic Designer',
+        'img' : 'barbara-ramos-graphic-designer.jpg',
     }
 ]
 
-console.log(dati);
 
+
+/* MILESTONE 1: Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
+*/
+
+for (let i = 0; i < dati_team.length; i++) {
+    console.log(dati_team[0]);    
+}
