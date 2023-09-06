@@ -16,7 +16,7 @@ E ricordiamoci che console.log() è nostro amico!
 Buon divertimento e confermate lettura come al solito!
 */
 
-//Creare l’array di oggetti con le informazioni fornite.
+// MILESTONE 0: Creare l’array di oggetti con le informazioni fornite.
 const dati_team = [
     {
         'name' : 'Wayne Barnett',
@@ -57,9 +57,26 @@ const dati_team = [
 
 
 
-/* MILESTONE 1: Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
+/* 
+MILESTONE 1: Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
 */
 
 for (let i = 0; i < dati_team.length; i++) {
     console.log(dati_team[i]);    
 }
+
+/*
+MILESTONE 2:
+Stampare le stesse informazioni su DOM sottoforma di stringhe
+*/
+
+const markup =
+`<div class="col-4">
+<div class="card">
+    <img src="" alt="">
+    <div class="card-body">
+        <h3 class="name"></h3>
+        <p class="job"></p>
+    </div>
+</div>
+</div>`
