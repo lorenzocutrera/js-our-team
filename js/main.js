@@ -73,10 +73,10 @@ Stampare le stesse informazioni su DOM sottoforma di stringhe
 const markup =
     `<div class="col-4">
 <div class="card">
-    <img src="" alt="${dati_team.img}">
+    <img src="" alt="${dati_team[i].img}">
     <div class="card-body">
-        <h3 class="name"> ${dati_team.name} </h3>
-        <p class="job"> ${dati_team.job} </p>
+        <h3 class="name"> ${dati_team[i].name} </h3>
+        <p class="job"> ${dati_team[i].job} </p>
     </div>
 </div>
 </div>`
