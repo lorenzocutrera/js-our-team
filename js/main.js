@@ -19,39 +19,39 @@ Buon divertimento e confermate lettura come al solito!
 // MILESTONE 0: Creare l’array di oggetti con le informazioni fornite.
 const dati_team = [
     {
-        'name' : 'Wayne Barnett',
-        'job' : 'Founder & CEO',
-        'img' : 'wayne-barnett-founder-ceo.jpg',
+        'name': 'Wayne Barnett',
+        'job': 'Founder & CEO',
+        'img': 'wayne-barnett-founder-ceo.jpg',
     },
 
     {
-        'name' : 'Angela Caroll',	
-        'job' : 'Chief Editor',
-        'img' : 'angela-caroll-chief-editor.jpg',
+        'name': 'Angela Caroll',
+        'job': 'Chief Editor',
+        'img': 'angela-caroll-chief-editor.jpg',
     },
 
     {
-        'name' : 'Walter Gordon',
-        'job' : 'Office Manager',
-        'img' : 'walter-gordon-office-manager.jpg',
+        'name': 'Walter Gordon',
+        'job': 'Office Manager',
+        'img': 'walter-gordon-office-manager.jpg',
     },
 
     {
-        'name' : 'Angela Lopez',
-        'job' : 'Social Media Manager',
-        'img' : 'angela-lopez-social-media-manager.jpg',
+        'name': 'Angela Lopez',
+        'job': 'Social Media Manager',
+        'img': 'angela-lopez-social-media-manager.jpg',
     },
 
     {
-        'name' : 'Scott Estrada',
-        'job' : 'Developer',
-        'img' : 'scott-estrada-developer.jpg',
+        'name': 'Scott Estrada',
+        'job': 'Developer',
+        'img': 'scott-estrada-developer.jpg',
     },
 
     {
-        'name' : 'Barbara Ramos',
-        'job' : 'Graphic Designer',
-        'img' : 'barbara-ramos-graphic-designer.jpg',
+        'name': 'Barbara Ramos',
+        'job': 'Graphic Designer',
+        'img': 'barbara-ramos-graphic-designer.jpg',
     }
 ]
 
@@ -62,7 +62,7 @@ MILESTONE 1: Stampare su console, per ogni membro del team, le informazioni di n
 */
 
 for (let i = 0; i < dati_team.length; i++) {
-    console.log(dati_team[i]);    
+    console.log(dati_team[i]);
 }
 
 /*
@@ -71,12 +71,13 @@ Stampare le stesse informazioni su DOM sottoforma di stringhe
 */
 
 const markup =
-`<div class="col-4">
+    `<div class="col-4">
 <div class="card">
-    <img src="" alt="">
+    <img src="" alt="${dati_team.img}">
     <div class="card-body">
-        <h3 class="name"></h3>
-        <p class="job"></p>
+        <h3 class="name"> ${dati_team.name} </h3>
+        <p class="job"> ${dati_team.job} </p>
     </div>
 </div>
 </div>`
+console.log(markup);
