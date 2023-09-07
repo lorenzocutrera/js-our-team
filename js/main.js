@@ -70,14 +70,24 @@ MILESTONE 2:
 Stampare le stesse informazioni su DOM sottoforma di stringhe
 */
 
-const markup =
-    `<div class="col-4">
+const markup = document.querySelector('.container');
+
+
+
+for (let i = 0; i < dati_team.length; i++) {
+
+    const dati = dati_team[i];
+
+`<div class="col-4">
 <div class="card">
-    <img src="" alt="${dati_team[i].img}">
+    <img src="" alt="${dati.img}">
     <div class="card-body">
-        <h3 class="name"> ${dati_team[i].name} </h3>
-        <p class="job"> ${dati_team[i].job} </p>
+        <h3 class="name"> ${dati.name} </h3>
+        <p class="job"> ${dati.job} </p>
     </div>
 </div>
 </div>`
-console.log(markup);
+
+markup.insertAdjacentHTML('beforeend', dati_team[i] )
+    
+}
