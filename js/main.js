@@ -59,16 +59,30 @@ const dati_team = [
 
 /* 
 MILESTONE 1: Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
-*/
 
 for (let i = 0; i < dati_team.length; i++) {
     console.log(dati_team[i]);
+}
+
+*/
+
+for (let i = 0; i < dati_team.length; i++) {
+    const memberObject = dati_team[i]
+   // console.log(dati_team[i]);
+
+    for (const key in memberObject){
+        const value = memberObject[key];
+
+        console.log(key, value);
+    }
 }
 
 /*
 MILESTONE 2:
 Stampare le stesse informazioni su DOM sottoforma di stringhe
 */
+
+document.writeln(memberObject.name, memberObject.job, memberObject.img )
 
 const markup = document.querySelector('.container');
 
